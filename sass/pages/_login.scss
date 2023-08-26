@@ -1,0 +1,230 @@
+@use "../variables/variables" as *;
+
+.go_form{
+    display: flex;
+    margin-top: -400px;
+    flex-direction: column;
+    .Welcome{
+        margin: auto;
+        color: $text_headers_color;
+        margin-bottom: 50px;
+    }
+    .login_container{
+        margin: auto;
+        border-radius: 25px;
+        width: 80%;
+        height: 450px;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(7px);
+        background-color: rgba(255, 255, 255, 0.3);
+        .form_content{
+            padding: 20px;
+            margin: auto;
+            form{
+                margin-left: 20px;
+                margin-top: 20px;
+                a{
+                    margin-left: 38%;
+                    color: $text_headers_color;
+                    text-decoration: none;
+                }
+            }
+            h1{
+                // position: absolute;
+                text-align: center;
+                font-size: xx-large;
+                padding: 10px;
+                // left: 40%;
+                // top: 20px;
+            }
+            .check_box_label{
+                display: inline-block
+            }
+            .check_box_btn{
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background-color: $text_headers_color;
+                accent-color:$text_headers_color;
+                &:focus{
+                    outline: none;   
+                }
+            }
+            label{
+                display: block;
+                margin-bottom: $space_between_inputs_labels;
+            }
+            input{
+                display: block;
+                width: 80%;
+                height: $inputs_height;
+                margin-bottom: $space_between_inputs;
+                border-radius: 15px;
+                border-width: 0.1px;
+                border-color: $input_border_color;
+                border-style: solid;
+                // margin: auto;
+
+                background-color: transparent;
+                padding-left: 15px;
+                &:focus{
+                    border-width: 0.1px;
+                    outline-color: $text_headers_color;
+                    border-color: $text_headers_color;
+                    outline-style: solid;
+                }
+            }
+            
+            .submit{
+                padding: 8px 30px;
+                border-radius: 12px;
+                border-color: $input_border_color;
+                border-style: solid;
+                color: $text_headers_color;
+                display: block;
+                margin-left: 20%;
+                border-width: 0.1px;
+                background-color: transparent;
+                &:hover{
+                    color: rgb(255, 255, 255);    
+                    background-color: $text_headers_color;
+                    border-color: $text_headers_color;
+                }
+            }
+            p{
+                margin: auto;
+                text-align: center;
+                margin-top: 20px;
+                width: 80%;
+                a{
+                    color: $text_headers_color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 480px){
+    .go_form{
+        margin-top: -250px;
+        .login_container{
+            height: 450px;
+            .form_content{
+                form{
+                    margin-left: 45px;
+                    margin-top: 20px;
+                }
+                .submit{
+                    margin-left: 28%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .go_form{
+        margin-top: -670px;
+        .login_container{
+            height: 450px;
+            .form_content{
+                form{
+                    margin-left: 12%;
+                    margin-top: 20px;
+                }
+                .submit{
+                    margin-left: 28%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .go_form{
+        margin-top: -111%;
+        .login_container{
+            width: 60%;
+            height: 450px;
+            .form_content{
+                form{
+                    margin-left: 14%;
+                    margin-top: 20px;
+                }
+                .submit{
+                    margin-left: 28%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .go_form{
+        margin-top: -60%;
+        .login_container{
+            width: 60%;
+            height: 450px;
+            .form_content{
+                form{
+                    margin-left: 14%;
+                    margin-top: 20px;
+                }
+                .submit{
+                    margin-left: 28%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .go_form{
+        margin-top: -60%;
+        .login_container{
+            width: 50%;
+            height: 450px;
+            .form_content{
+                form{
+                    margin-left: 0%;
+                    margin-top: 20px;
+                    label,input{
+                        margin-left: 8%;
+                    }
+                    .check_box_label{
+                        margin-left: 0px;
+                    }
+                }
+                .submit{
+                    margin-left: 37%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .go_form{
+        margin-top: -40%;
+        .login_container{
+            width: 40%;
+            height: 450px;
+            .form_content{
+                form{
+                    margin-left: 0%;
+                    margin-top: 20px;
+                    label,input{
+                        margin-left: 10%;
+                    }
+                    .check_box_label{
+                        margin-left: 0px;
+                    }
+                }
+                .submit{
+                    margin-left: 41%;
+                }
+            }
+        }
+    }
+}
