@@ -1,14 +1,4 @@
 @use "../variables/variables" as *;
-.header{
-    padding: 25px;
-    position: relative;
-    .content{
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        z-index: 1;
-    }
-}
 
 .allpage{
     position: relative;

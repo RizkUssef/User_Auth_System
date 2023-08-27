@@ -4,6 +4,6 @@
 @use "pages/login";
 @use "pages/welcome";
 @use "errors/errors";
-@use "layout/blobs_bg";
 @use "pages/_intro.scss";
-@use "pages/email"
+@use "pages/email";
+@use "pages/header"
