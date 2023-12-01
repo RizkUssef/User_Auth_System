@@ -93,6 +93,7 @@
                             margin: auto;
                             border-width: 0.1px;
                             background-color: transparent;
+                            cursor: pointer;
                             &:hover{
                                 color: rgb(255, 255, 255);    
                                 background-color: $text_headers_color;
@@ -100,7 +101,24 @@
                             }
                         }
                     }
-
+                    .login_with_google{
+                        padding: 8px 30px;
+                        border-radius: 15px;
+                        border-color: $input_border_color;
+                        border-style: solid;
+                        border-width: 0.1px;
+                        font-size: large;
+                        margin-top: 10px;
+                        color: #000000;
+                        text-decoration: none;
+                        background-color: transparent;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                            margin-left: 10px;
+                            margin-bottom: -4px;
+                        }
+                    }
                     p{
                         margin: auto;
                         text-align: center;
