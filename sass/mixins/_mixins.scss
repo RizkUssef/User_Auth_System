@@ -1,0 +1,18 @@
+@use "../variables/variables" as *;
+
+
+@mixin flex($justify,$align,$dir){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $dir;
+}
+
+@mixin allBg(){
+    @include flex(center,center ,column );
+    background-image: url("../../img/Group 13 (1).svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130vh;
+}

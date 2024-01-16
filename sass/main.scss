@@ -1,6 +1,7 @@
 @use "layout/reset";
 @use "variables/variables" as *;
-@use "pages/register";
+@use "mixins/mixins";
+// @use "pages/register";
 @use "pages/login";
 @use "pages/welcome";
 @use "errors/errors";

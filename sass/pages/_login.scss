@@ -1,20 +1,10 @@
 @use "../variables/variables" as *;
+@import "../mixins/mixins";
 
 .bg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../../img/Group 13 (1).svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 130vh;
+    @include allBg();
         .center_all{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(center,center ,column );
         width: 90%;
         height: 50%;
         margin-bottom: 50px;
@@ -25,10 +15,7 @@
                 margin-bottom: 30px;
             }
             .login_container{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                @include flex(center,center ,column );
                 margin: auto;
                 border-radius: 25px;
                 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
@@ -36,7 +23,6 @@
                 background-color: rgba(255, 255, 255, 0.3);
                 width: 90%;
                 padding: 20px 5px;
-                // margin-bottom: 150px;
                     h1{
                         text-align: center;
                         font-size: xx-large;
@@ -46,7 +32,7 @@
                         margin: auto;
                         input{
                             display: block;
-                            width: 92%;
+                            width: 100%;
                             height: $inputs_height;
                             margin-bottom: $space_between_inputs;
                             border-radius: 15px;
@@ -62,25 +48,21 @@
                                 outline-style: solid;
                             }
                         }
-                        .forget_password{
-                            display: block;
-                            margin-left: 75px;
-                            margin-top: -25px;
-                            margin-bottom: 20px;
-                            color: $text_headers_color;
-                            text-decoration: none;
-                        }
-                        .check_box_label{
-                            display: inline-block
-                        }
-                        .check_box_btn{
-                            display: inline-block;
-                            width: 15px;
-                            height: 15px;
-                            background-color: $text_headers_color;
-                            accent-color:$text_headers_color;
-                            &:focus{
-                                outline: none;   
+                        .forget_reme{
+                            @include flex(space-between,baseline ,row );
+                            .forget_password{
+                                color: $text_headers_color;
+                                text-decoration: none;
+                            }
+                            .check_box_btn{
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                background-color: $text_headers_color;
+                                accent-color:$text_headers_color;
+                                &:focus{
+                                    outline: none;   
+                                }
                             }
                         }
                         .submit{
@@ -134,65 +116,48 @@
         }
 }
 
-@media only screen and (min-width: 480px){
-    .bg{
-        .center_all{
-            margin-top: 50%;
-            // margin-bottom: 50%;
-        }
-    }
+.height_100{
+    height: 100vh;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 480px) and (max-width: 800px) {
     .bg{
-        height: 100vh;
         .center_all{
-            margin-top: 0%;
-            // margin-bottom: 50%;
-        }
-    }
-}
-
-@media only screen and (min-width: 768px){
-    .bg{
-        height: 100vh;
-        .center_all{
-            margin-top: 0%;
             width: 70%;
-            // margin-bottom: 50%;
         }
     }
 }
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 801px) and (max-width: 1000px){
     .bg{
-        height: 100vh;
         .center_all{
-            margin-top: 0%;
             width: 70%;
-            // margin-bottom: 50%;
         }
     }
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1001px) and (max-width: 1500px){
     .bg{
-        height: 100vh;
         .center_all{
-            margin-top: 0%;
-            width: 60%;
-            // margin-bottom: 50%;
+            width: 50%;
         }
     }
 }
 
-@media only screen and (min-width: 1500px){
+@media only screen and (min-width: 1501px) and (max-width: 2000px){
     .bg{
-        height: 100vh;
         .center_all{
-            margin-top: 0%;
-            width: 45%;
-            // margin-bottom: 50%;
+            width: 40%;
         }
     }
 }
+
+// @media only screen and (min-width: 1500px){
+//     .bg{
+//         height: 100vh;
+//         .center_all{
+//             margin-top: 0%;
+//             width: 45%;
+//         }
+//     }
+// }

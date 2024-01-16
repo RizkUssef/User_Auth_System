@@ -1,6 +1,7 @@
 @use "../variables/variables" as *;
 .header{
     position: fixed;
+    z-index: 10;
     .content{
         width: 90px;
         padding: 10px;

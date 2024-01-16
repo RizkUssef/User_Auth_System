@@ -1,15 +1,10 @@
 @use "../variables/variables" as *;
+@import "../mixins/mixins";
 
 .intro_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // margin-top: -140%;
+    @include flex(center,center ,row );
     .all{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(center,center ,column );
         margin-top: 31%;
         width: 90%;
         padding: 10px;
@@ -36,7 +31,6 @@
 
 @media only screen and (min-width: 480px){
     .intro_container{
-        // margin-top: -50%;
         .all{
             margin-top: 8%;
             width: 90%;   
@@ -46,11 +40,8 @@
 
 @media only screen and (min-width: 600px){
     .intro_container{
-        // margin-top: -50%;
         width: 90%;
-
         .all{
-            // margin-top: 40%;
             width: 90%;
         }
     }
@@ -58,7 +49,6 @@
 
 @media only screen and (min-width: 768px){
     .intro_container{
-        // margin-top: -150%;
         width: 70%;
         .all{
             margin-top: 48%;
@@ -69,7 +59,6 @@
 
 @media only screen and (min-width: 800px){
     .intro_container{
-        // margin-top: -70%;
         width: 60%;
         .all{
             margin-top: 23%;
@@ -80,7 +69,6 @@
 
 @media only screen and (min-width: 1024px){
     .intro_container{
-        // margin-top: -80%;
         width: 60%;
         .all{
             margin-top: 25%;
@@ -91,7 +79,6 @@
 
 @media only screen and (min-width: 1500px){
     .intro_container{
-        // margin-top: -50%;
         width: 70%;
         .all{
             margin-top: 15%;

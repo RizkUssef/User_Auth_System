@@ -57,11 +57,3 @@ Securely reset passwords by following the password reset procedure
 * CSS
 * SCSS
 * JavaScript
-
-
-
-
-
-
-
-

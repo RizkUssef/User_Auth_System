@@ -1,225 +1,225 @@
-@use "../variables/variables" as *;
+// @use "../variables/variables" as *;
 
-.go_form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../../img/Group 13 (1).svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    padding-bottom: 100px;
-        .content{
-            background-image: url('../../img/logo1.svg');
-            background-position: center;
-            background-size: cover; 
-            margin-top: -29px;
-            margin-left: -201px;
-            margin-bottom: 50px;
-            width: 100px;
-            height: 50px;
-            padding: 10px;
-        }
-        .center_all{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: 50%;
-        flex-direction: column;
-        margin: 50px 0px;
-            .Welcome{
-                margin: auto;
-                color: $text_headers_color;
-                margin-bottom: 30px;
-                margin-top: 50px;
-            }
-            .login_container{
-                padding: 15px 0px;
-                width: 100%;
-                margin: auto;
-                border-radius: 25px;
-                box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
-                backdrop-filter: blur(7px);
-                background-color: rgba(255, 255, 255, 0.3);
-                .form_content{
-                        width: 100%;
-                    h1{
-                        text-align: center;
-                        font-size: xx-large;
-                    }
-                    form{
-                        width: 80%;
-                        margin: auto;
-                        input{
-                            display: block;
-                            width: 92%;
-                            height: $inputs_height;
-                            margin-bottom: $space_between_inputs;
-                            border-radius: 15px;
-                            border-width: 0.1px;
-                            border-color: $input_border_color;
-                            border-style: solid;
-                            background-color: transparent;
-                            padding-left: 15px;
-                            &:focus{
-                                border-width: 0.1px;
-                                outline-color: $text_headers_color;
-                                border-color: $text_headers_color;
-                                outline-style: solid;
-                            }
-                        }
-                        .forget_password{
-                            display: block;
-                            margin-left: 75px;
-                            margin-top: -25px;
-                            margin-bottom: 20px;
-                            color: $text_headers_color;
-                            text-decoration: none;
-                        }
-                        .check_box_label{
-                            display: inline-block
-                        }
-                        .check_box_btn{
-                            display: inline-block;
-                            width: 15px;
-                            height: 15px;
-                            background-color: $text_headers_color;
-                            accent-color:$text_headers_color;
-                            &:focus{
-                                outline: none;   
-                            }
-                        }
-                        .submit{
-                            padding: 8px 30px;
-                            border-radius: 12px;
-                            border-color: $input_border_color;
-                            border-style: solid;
-                            color: $text_headers_color;
-                            display: block;
-                            margin: auto;
-                            border-width: 0.1px;
-                            background-color: transparent;
-                            &:hover{
-                                color: rgb(255, 255, 255);    
-                                background-color: $text_headers_color;
-                                border-color: $text_headers_color;
-                            }
-                        }
-                    }
+// .go_form{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background-image: url("../../img/Group 13 (1).svg");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     height: 100vh;
+//     padding-bottom: 100px;
+//         .content{
+//             background-image: url('../../img/logo1.svg');
+//             background-position: center;
+//             background-size: cover; 
+//             margin-top: -29px;
+//             margin-left: -201px;
+//             margin-bottom: 50px;
+//             width: 100px;
+//             height: 50px;
+//             padding: 10px;
+//         }
+//         .center_all{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         width: 90%;
+//         height: 50%;
+//         flex-direction: column;
+//         margin: 50px 0px;
+//             .Welcome{
+//                 margin: auto;
+//                 color: $text_headers_color;
+//                 margin-bottom: 30px;
+//                 margin-top: 50px;
+//             }
+//             .login_container{
+//                 padding: 15px 0px;
+//                 width: 100%;
+//                 margin: auto;
+//                 border-radius: 25px;
+//                 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+//                 backdrop-filter: blur(7px);
+//                 background-color: rgba(255, 255, 255, 0.3);
+//                 .form_content{
+//                         width: 100%;
+//                     h1{
+//                         text-align: center;
+//                         font-size: xx-large;
+//                     }
+//                     form{
+//                         width: 80%;
+//                         margin: auto;
+//                         input{
+//                             display: block;
+//                             width: 92%;
+//                             height: $inputs_height;
+//                             margin-bottom: $space_between_inputs;
+//                             border-radius: 15px;
+//                             border-width: 0.1px;
+//                             border-color: $input_border_color;
+//                             border-style: solid;
+//                             background-color: transparent;
+//                             padding-left: 15px;
+//                             &:focus{
+//                                 border-width: 0.1px;
+//                                 outline-color: $text_headers_color;
+//                                 border-color: $text_headers_color;
+//                                 outline-style: solid;
+//                             }
+//                         }
+//                         .forget_password{
+//                             display: block;
+//                             margin-left: 75px;
+//                             margin-top: -25px;
+//                             margin-bottom: 20px;
+//                             color: $text_headers_color;
+//                             text-decoration: none;
+//                         }
+//                         .check_box_label{
+//                             display: inline-block
+//                         }
+//                         .check_box_btn{
+//                             display: inline-block;
+//                             width: 15px;
+//                             height: 15px;
+//                             background-color: $text_headers_color;
+//                             accent-color:$text_headers_color;
+//                             &:focus{
+//                                 outline: none;   
+//                             }
+//                         }
+//                         .submit{
+//                             padding: 8px 30px;
+//                             border-radius: 12px;
+//                             border-color: $input_border_color;
+//                             border-style: solid;
+//                             color: $text_headers_color;
+//                             display: block;
+//                             margin: auto;
+//                             border-width: 0.1px;
+//                             background-color: transparent;
+//                             &:hover{
+//                                 color: rgb(255, 255, 255);    
+//                                 background-color: $text_headers_color;
+//                                 border-color: $text_headers_color;
+//                             }
+//                         }
+//                     }
 
-                    p{
-                        margin: auto;
-                        text-align: center;
-                        margin-top: 20px;
-                        width: 80%;
-                        a{
-                            color: $text_headers_color;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-        }
-}
+//                     p{
+//                         margin: auto;
+//                         text-align: center;
+//                         margin-top: 20px;
+//                         width: 80%;
+//                         a{
+//                             color: $text_headers_color;
+//                             text-decoration: none;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+// }
 
-@media only screen and (min-width: 480px){
-    .go_form{
-        .content{
-            margin-top: 68px;
-            margin-left: -371px;
-            margin-bottom: 86px;
-            width: 91px;
-            height: 33px;
-        }
-        .center_all{
-            width: 80%;
-        }
-    }
-}
+// @media only screen and (min-width: 480px){
+//     .go_form{
+//         .content{
+//             margin-top: 68px;
+//             margin-left: -371px;
+//             margin-bottom: 86px;
+//             width: 91px;
+//             height: 33px;
+//         }
+//         .center_all{
+//             width: 80%;
+//         }
+//     }
+// }
 
-@media only screen and (min-width: 600px){
-    .go_form{
-        // margin-top: 0vh; 
-        .content{
-            margin-top: -230px;
-            margin-left: -490px;
-            margin-bottom: 0px;
-            width: 91px;
-            height: 60px;
-        }
-        .center_all{
-            width: 70%;
-        }
-    }
+// @media only screen and (min-width: 600px){
+//     .go_form{
+//         // margin-top: 0vh; 
+//         .content{
+//             margin-top: -230px;
+//             margin-left: -490px;
+//             margin-bottom: 0px;
+//             width: 91px;
+//             height: 60px;
+//         }
+//         .center_all{
+//             width: 70%;
+//         }
+//     }
 
-}
+// }
 
-@media only screen and (min-width: 768px){
-    .go_form{
-        // margin-top: 0vh; 
-        .content{
-            margin-top: -45%;
-            margin-left: -86%;
-            margin-bottom: 0px;
-            width: 91px;
-            height: 60px;
-        }
-        .center_all{
-            width: 70%;
-        }
-    }
-}
+// @media only screen and (min-width: 768px){
+//     .go_form{
+//         // margin-top: 0vh; 
+//         .content{
+//             margin-top: -45%;
+//             margin-left: -86%;
+//             margin-bottom: 0px;
+//             width: 91px;
+//             height: 60px;
+//         }
+//         .center_all{
+//             width: 70%;
+//         }
+//     }
+// }
 
-@media only screen and (min-width: 800px){
-    .go_form{
-        margin-top: 18.5vh; 
-        .content{
-            margin-top: -45%;
-            margin-left: -86.5%;
-            margin-bottom: 0px;
-            width: 91px;
-            height: 60px;
-        }
-        .center_all{
-            width: 60%;
-        }
-    }
-}
+// @media only screen and (min-width: 800px){
+//     .go_form{
+//         margin-top: 18.5vh; 
+//         .content{
+//             margin-top: -45%;
+//             margin-left: -86.5%;
+//             margin-bottom: 0px;
+//             width: 91px;
+//             height: 60px;
+//         }
+//         .center_all{
+//             width: 60%;
+//         }
+//     }
+// }
 
-@media only screen and (min-width: 1024px){
-    .go_form{
-        margin-top: 15.9vh; 
-        .content{
-            margin-top: -45%;
-            margin-left: -89.5%;
-            // margin-bottom: 50%;
-            width: 91px;
-            height: 61px;
-        }
-        .center_all{
-            // margin-top: 20%;
-            width: 50%;
-        }
-    }
-}
+// @media only screen and (min-width: 1024px){
+//     .go_form{
+//         margin-top: 15.9vh; 
+//         .content{
+//             margin-top: -45%;
+//             margin-left: -89.5%;
+//             // margin-bottom: 50%;
+//             width: 91px;
+//             height: 61px;
+//         }
+//         .center_all{
+//             // margin-top: 20%;
+//             width: 50%;
+//         }
+//     }
+// }
 
-@media only screen and (min-width: 1500px){
-    .go_form{
-        // margin-top: 15.9vh; 
-        margin-top: -0.1vh;
-        .content{
-            margin-top: -13%;
-            margin-left: -93.5%;
-            // margin-bottom: 10%;
-            width: 91px;
-            height: 61px;
-        }
-        .center_all{
-            // margin-top: 20%;
-            width: 35%;
-        }
-    }
-}
+// @media only screen and (min-width: 1500px){
+//     .go_form{
+//         // margin-top: 15.9vh; 
+//         margin-top: -0.1vh;
+//         .content{
+//             margin-top: -13%;
+//             margin-left: -93.5%;
+//             // margin-bottom: 10%;
+//             width: 91px;
+//             height: 61px;
+//         }
+//         .center_all{
+//             // margin-top: 20%;
+//             width: 35%;
+//         }
+//     }
+// }

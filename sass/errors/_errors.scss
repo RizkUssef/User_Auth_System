@@ -1,12 +1,7 @@
 @use "../variables/variables" as *;
 .bg{
     .error_container{
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         position: absolute;
-        // top: 0;
-        bottom: 0;
         width: 70%;
         .all{
             display: flex;

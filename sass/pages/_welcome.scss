@@ -1,4 +1,7 @@
 @use "../variables/variables" as *;
+@import "../mixins/mixins";
+
+
 .bg{
     .page{
         width: 70%;
@@ -9,10 +12,7 @@
         backdrop-filter: blur(7px);
         background-color: rgba(255, 255, 255, 0.3);
         padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(center,center ,column );
         .para{
             text-align: center;
             h1{
@@ -20,6 +20,10 @@
                 font-weight: bolder;
                 margin: 10px 0px;
                 color: $text_headers_color;
+            }
+            p{
+                text-align: justify;
+                margin-bottom: 20px;
             }
         }
         .image{
@@ -32,9 +36,7 @@
             }
         }
         .links{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(center,center ,row );
             .signup{
                 padding: 8px 30px;
                 border-radius: 12px;
@@ -78,10 +80,6 @@
             }
         }
     }
-}
-
-@media only screen and (min-width: 480px){
-
 }
 
 @media only screen and (min-width: 600px){
